@@ -1,75 +1,27 @@
-# React + TypeScript + Vite
+## Pokedex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pokedex en TypeScript qui permet de switcher entre bulbizarre et mew avec des bouttons.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Fonctionnement
 
-## React Compiler
+Les Etapes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. iniatialiser une application react avec la commande "nmp create vite@latest nom-du-projet" et faire la commande "npm run dev". Créer un repo GitHub egalement en parallèle.
 
-## Expanding the ESLint configuration
+2. Créer une nouvelle branche "components.1". Créer un dossier components à la racine du dossier src et créer un fichier PokemonCard.tsx.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. A l'intérieur, on nous demande de créer des balises.Toutes ces balises doivent être englobé dans une function App(){}. 
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+4. Créer une nouvelle branche "components.2". Là, on nous demande de créer une const pokemon list en dehors de la fonction qui a comme information name et imgSrc de nos pokemon et de rendre notre composant (function app) "dynamique".
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+5. Créer une nouvelle branche "props.2. Modifier le fichier tsconfig.app.json. J'ai "typer"ma function PokemonCard et j'ai mis des props sur name et imgSrc.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+6. Faire du state (j'ai pas bien compris comment le faire seul, j'ai donc repris simplement la réponse qui était donnée.)
 
-```
+## Technologies utilisées:
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- HTML5
+- TypeScript
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+Auteur: Philippe, Ferreira
