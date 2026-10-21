@@ -1,3 +1,8 @@
+type PokemonCard = {
+  name: string;
+  imgSrc: string;
+}
+
 function PokemonCard({pokemon}) {
   if (pokemon.imgSrc == undefined) {
     return (
