@@ -1,0 +1,46 @@
+.bulbasaur{
+  border-width: 3rem;
+  border-style: solid;
+  border-color: green;
+  border-radius:15%;
+  background-color: white;
+  width: 50%;
+  margin-left: 25%;
+  }
+  
+.charmander{
+  border-width: 3rem;
+  border-style: solid;
+  border-color: rgb(133, 27, 27);
+  border-radius: 15%;
+  background-color: white;
+  width: 50%;
+  margin-left: 25%;
+}
+.squirtle{
+  border-width: 3rem;
+  border-style: solid;
+  border-color: rgb(21, 153, 215);
+  border-radius: 15%;
+  background-color: white;
+  width: 50%;
+  margin-left: 25%;
+}
+.pikachu{
+  border-width: 3rem;
+  border-style: solid;
+  border-color: rgb(215, 215, 35);
+  border-radius: 15%;
+  background-color: white;
+  width: 50%;
+  margin-left: 25%;
+}
+.name-pokemon{
+  font-size: 2rem;
+  height: 3rem;
+  color: black;
+  font-weight: bold;
+}
+.fond-pokemon{
+  background-color: white;
+}

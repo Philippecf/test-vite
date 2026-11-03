@@ -13,9 +13,9 @@ function PokemonCard({pokemon}) {
     );
   } else {
     return (
-      <figure>
-        <figcaption>{pokemon.name}</figcaption>
-        <img src={pokemon.imgSrc} alt={pokemon.name} />
+      <figure className= {`${pokemon.name}`}>
+        <img src={pokemon.imgSrc} alt={pokemon.name} className="fond-pokemon"/>
+        <figcaption className="name-pokemon">{pokemon.name}</figcaption>
       </figure>
     );
   }
