@@ -10,7 +10,7 @@
 
 ## Problématique
 
-Chaque étapes du brief etaient compliqué, essaentiellement dans la synthaxe mais aussi dans la compréhension de certaine notion ou les challenges.
+Chaque étapes du brief etaient compliqués, essaentiellement dans la synthaxe mais aussi dans la compréhension de certaine notion ou les challenges.
 
 ## Technologies utilisées:
 
